@@ -69,7 +69,7 @@
   box-sizing: border-box;
 }
 
-/* Crazy: Why do we need to add a * here???????????? */
+/* Crazy: Why do we need to add a * here if we put it inside @media screen???????????? */
 html {
   scroll-behavior: smooth;
 }
@@ -100,6 +100,7 @@ ul {
 
 a {
   text-decoration: none;
+  /* color: inherit; inherit the color of the parent */
 }
 
 button {
@@ -170,6 +171,10 @@ img {
 
 /* For Large Devices */
 @media screen and (max-width: 992px) {
+  .container {
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+  }
 }
 
 /* For Medium Devices */
@@ -180,4 +185,8 @@ img {
 }
 /* For Small Devices */
 @media screen and (max-width: 350px) {
+  container {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
 }
